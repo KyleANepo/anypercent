@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class spawner : MonoBehaviour
 {
+    [SerializeField] private GameObject zombie;
+    [SerializeField] private GameObject bat;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,8 +15,7 @@ public class MainMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
     }
 }

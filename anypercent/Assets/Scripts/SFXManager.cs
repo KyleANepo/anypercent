@@ -32,13 +32,13 @@ public class SFXManager : MonoBehaviour
 
     public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)
     {
-        AudioSource audioSource = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
-        audioSource.clip = audioClip;
-        audioSource.volume = volume;
-        audioSource.Play();
-        float clipLength = audioSource.clip.length;
+        AudioSource asshole = Instantiate(soundFXObject, spawnTransform.position, Quaternion.identity);
+        asshole.clip = audioClip;
+        asshole.volume = volume;
+        asshole.Play();
+        float clipLength = asshole.clip.length;
 
-        Destroy(audioSource.gameObject, clipLength);
+        Destroy(asshole.gameObject, clipLength);
     }
 
     public void PlayMusic(int scene)
