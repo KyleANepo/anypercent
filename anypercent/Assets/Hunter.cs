@@ -55,6 +55,11 @@ public class Hunter : MonoBehaviour
     void AttackHigh()
     {
         wrench = true;
+        
+    }
+
+    void Throw()
+    {
         GameObject b = Instantiate(bullet, transform);
         Destroy(b, 2f);
         SFXManager.Instance.PlaySoundFXClip(toss, transform, .5f);

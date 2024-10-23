@@ -18,9 +18,9 @@ public class hitbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<Collider2D>().GetComponent<zombie>())
+        if (collision.GetComponent<Collider2D>().TryGetComponent(out IEnemy enemy))
         {
-            collision.GetComponent<Collider2D>().GetComponent<zombie>().Die();
+            enemy.Die();
         }
     }
 }
