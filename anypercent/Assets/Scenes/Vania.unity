@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 257734825}
   - component: {fileID: 257734824}
   - component: {fileID: 257734827}
+  - component: {fileID: 257734828}
   m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -491,6 +492,21 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &257734828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257734823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e236fec06ede543a52b9fc6d5e466b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 365013320}
+  smoothSpeed: 0.125
+  locationOffset: {x: 0, y: 2, z: -10}
 --- !u!1 &352876001
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +590,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e83b6934731957d42b8996fdb3aad222, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -602,6 +618,7 @@ MonoBehaviour:
   bullet: {fileID: 4709387086362150129, guid: 22bc13fca7a04d3479efb30f4513e680, type: 3}
   swing: {fileID: 8300000, guid: 34e4f1fc7080fd946bafbf981548ab04, type: 3}
   toss: {fileID: 8300000, guid: f2444384f26c6254c8dedb609df17bf6, type: 3}
+  speed: 4
 --- !u!212 &365013319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -939,7 +956,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2050633783959862678, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6211657648815574585, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
       propertyPath: m_Name
