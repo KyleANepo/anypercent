@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 // Don't use, unity sucks!
 public class Minigame
@@ -19,11 +19,17 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get { return _instance; } }
 
     public int gameCount;
+    public bool End;
+
+    [SerializeField] Image healthbar;
+    public float health;
+
+    /*
     public float gameTime;
     [SerializeField] public GameObject ui;
     [SerializeField] public List<bool> minigames = new List<bool>(); // keeps track of which minigames were completed
     [SerializeField] public Image timer;
-
+    */
 
     private void Awake()
     {
@@ -43,16 +49,44 @@ public class GameManager : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        healthbar.fillAmount = health / 5f;
+    }
+
     private void StartGame()
     {
         gameCount = 0;
-        gameTime = 10f;
-        int index = GetRandomGame();
-        SceneManager.LoadScene(index + 3);
+        SceneManager.LoadScene(3);
     }
 
+    [SerializeField] private GameObject opening;
+    [SerializeField] private GameObject ending;
+    [SerializeField] private GameObject text;
+    [SerializeField] private GameObject dead;
 
+    public void ResetAll()
+    {
+        opening.SetActive(false);
+        ending.SetActive(false);
+        text.SetActive(false);
+        dead.SetActive(false);
 
+        opening.SetActive(true);
+        text.SetActive(true);
+    }
+
+    public void OnDeath()
+    {
+        dead.SetActive(true);
+    }
+
+    public void OnEnd()
+    {
+        ending.SetActive(true);
+    }
+
+    /*
     // Only return the index of games not completed yet
     private int GetRandomGame()
     {
@@ -62,4 +96,5 @@ public class GameManager : MonoBehaviour
         minigames[index] = true;
         return index;
     }
+    */
 }

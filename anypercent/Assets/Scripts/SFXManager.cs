@@ -43,7 +43,7 @@ public class SFXManager : MonoBehaviour
 
     public void PlayMusic(int scene)
     {
-        Debug.Log(musicScores[scene]);
+        // Debug.Log(musicScores[scene]);
         if (musicPlayer.clip != musicScores[scene])
         {
             musicPlayer.clip = musicScores[scene];

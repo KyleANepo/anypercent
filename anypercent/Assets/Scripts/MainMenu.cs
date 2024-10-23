@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SFXManager.Instance.PlaySoundFXClip(title, transform, 1f);
+        // SFXManager.Instance.PlaySoundFXClip(title, transform, 1f);
         start = false;
     }
 

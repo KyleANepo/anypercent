@@ -11,9 +11,9 @@ TagManager:
   - Camera
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Floor
+  - Player
+  - Enemy
   - 
   - 
   - 

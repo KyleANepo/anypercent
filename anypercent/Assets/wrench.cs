@@ -12,9 +12,9 @@ public class wrench : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        rb.AddForce(transform.up * 8f, ForceMode2D.Impulse);
-        rb.AddForce(transform.right * 8f, ForceMode2D.Impulse);
-        rb.AddTorque(10f, ForceMode2D.Impulse);
+        rb.AddForce(transform.up * 15f, ForceMode2D.Impulse);
+        rb.AddForce(transform.right * 5f, ForceMode2D.Impulse);
+        rb.AddTorque(20f, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame

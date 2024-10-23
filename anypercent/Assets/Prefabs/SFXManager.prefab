@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundFXObject: {fileID: 7229921171490983145, guid: c55af7ab9e093fb4ba85ee6c7a6118bc, type: 3}
   musicScores:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 65f51c01f7cbd9042bab10f5cc57069a, type: 3}
 --- !u!82 &3996593847117427129
 AudioSource:
   m_ObjectHideFlags: 0

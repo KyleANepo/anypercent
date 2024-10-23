@@ -19,6 +19,6 @@ public class introtransition : MonoBehaviour
     
     public void GONEXT()
     {
-        SceneManager.LoadScene("Transition");
+        SceneManager.LoadScene(2);
     }
 }
