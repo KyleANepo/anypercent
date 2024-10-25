@@ -9,14 +9,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject panel2;
     [SerializeField] private GameObject panel3;
     [SerializeField] AudioClip boom;
-    [SerializeField] AudioClip title;
 
     private float timer = 3f;
 
     // Start is called before the first frame update
     void Start()
     {
-        // SFXManager.Instance.PlaySoundFXClip(title, transform, 1f);
         start = false;
     }
 

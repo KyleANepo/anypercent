@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(3);
     }
 
+    [SerializeField] private GameObject ui;
     [SerializeField] private GameObject opening;
     [SerializeField] private GameObject ending;
     [SerializeField] private GameObject text;
@@ -111,4 +112,15 @@ public class GameManager : MonoBehaviour
         return index;
     }
     */
+
+    public void UIOn()
+    {
+        ui.SetActive(true);
+        ResetAll();
+    }
+
+    public void UIOff()
+    {
+        ui.SetActive(false);
+    }
 }

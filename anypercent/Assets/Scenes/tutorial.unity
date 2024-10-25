@@ -8335,6 +8335,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7844267740738692952, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
+      propertyPath: m_text
+      value: YOUR APARTMENT
+      objectReference: {fileID: 0}
+    - target: {fileID: 7844267740738692952, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
+      propertyPath: m_fontSize
+      value: 45.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9244,10 +9252,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5547806468887741494, guid: 5f9b7cde6b2022647a088968eea3e454, type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 147336111163792612, guid: 3e9c5d1feb5595c409c78ddb81e86da7, type: 3}
       propertyPath: m_Name
       value: Zombie
@@ -9293,6 +9297,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5547806468887741494, guid: 3e9c5d1feb5595c409c78ddb81e86da7, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5547806468887741494, guid: 5f9b7cde6b2022647a088968eea3e454, type: 3}
       propertyPath: speed
       value: 0
       objectReference: {fileID: 0}
