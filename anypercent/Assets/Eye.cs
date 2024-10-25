@@ -18,6 +18,8 @@ public class Eye : MonoBehaviour, IEnemy
 
     void FixedUpdate()
     {
+        if (GameManager.Instance.Paused) return;
+
         Vector2 pos = transform.position;
         pos.x -= speed * Time.fixedDeltaTime;
         

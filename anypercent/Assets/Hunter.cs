@@ -37,6 +37,8 @@ public class Hunter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.Paused) return;
+
         damageTimer -= Time.deltaTime;
 
         if (!isDamage)
@@ -62,7 +64,10 @@ public class Hunter : MonoBehaviour
 
         if (pipe || wrench)
         {
-            rb.velocity = new Vector2(0, rb.velocity.y);
+            if (!isDamage)
+            {
+                rb.velocity = new Vector2(0, rb.velocity.y);
+            }
             return;
         }
 
@@ -82,12 +87,6 @@ public class Hunter : MonoBehaviour
         animator.SetBool("pipe", pipe);
         animator.SetBool("wrench", wrench);
         animator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
-    }
-
-    private void FixedUpdate()
-    {
-        if (pipe || wrench)
-            return;
     }
 
     private bool IsGrounded()
@@ -146,6 +145,7 @@ public class Hunter : MonoBehaviour
             isDamage = true;
             if (GameManager.Instance.health > 1)
             {
+                rb.velocity = new Vector2(0f, rb.velocity.y);
                 rb.AddForce(transform.up * 5f, ForceMode2D.Impulse);
                 rb.AddForce(transform.right * -8f, ForceMode2D.Impulse);
                 GameManager.Instance.health -= 1f;

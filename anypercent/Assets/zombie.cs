@@ -19,6 +19,8 @@ public class zombie : MonoBehaviour, IEnemy
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (GameManager.Instance.Paused) return;
+
         rb.velocity = new Vector2(-speed, rb.velocity.y);
     }
 

@@ -17,9 +17,8 @@ public class GameManager : MonoBehaviour
     public static GameManager _instance;
 
     public static GameManager Instance { get { return _instance; } }
-
-    public int gameCount;
     public bool End;
+    public bool Paused;
 
     [SerializeField] Image healthbar;
     public float health;
@@ -49,6 +48,22 @@ public class GameManager : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape) && !End)
+        {
+            if (Paused)
+            {
+                Time.timeScale = 1;
+                Paused = false;
+            } else
+            {
+                Time.timeScale = 0;
+                Paused = true;
+            }
+        }
+    }
+
     private void FixedUpdate()
     {
         healthbar.fillAmount = health / 5f;
@@ -56,7 +71,6 @@ public class GameManager : MonoBehaviour
 
     private void StartGame()
     {
-        gameCount = 0;
         SceneManager.LoadScene(3);
     }
 
