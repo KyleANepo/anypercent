@@ -50,4 +50,9 @@ public class SFXManager : MonoBehaviour
             musicPlayer.Play();
         }
     }
+
+    public void MuteMusic(bool muted)
+    {
+        musicPlayer.mute = muted;
+    }
 }

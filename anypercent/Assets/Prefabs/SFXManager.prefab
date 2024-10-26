@@ -47,7 +47,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundFXObject: {fileID: 7229921171490983145, guid: c55af7ab9e093fb4ba85ee6c7a6118bc, type: 3}
   musicScores:
-  - {fileID: 8300000, guid: 65f51c01f7cbd9042bab10f5cc57069a, type: 3}
+  - {fileID: 8300000, guid: b154c856bb093384398b6f15548570d6, type: 3}
+  - {fileID: 8300000, guid: fda2358ab3025c247a08241f88de11c7, type: 3}
+  - {fileID: 8300000, guid: 03953b7e1f6565e4797e93d0e66c2b37, type: 3}
 --- !u!82 &3996593847117427129
 AudioSource:
   m_ObjectHideFlags: 0
@@ -60,7 +62,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0

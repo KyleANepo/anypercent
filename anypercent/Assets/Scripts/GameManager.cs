@@ -55,10 +55,13 @@ public class GameManager : MonoBehaviour
             if (Paused)
             {
                 Time.timeScale = 1;
+                paused.SetActive(false);
                 Paused = false;
             } else
             {
+                SFXManager.Instance.PlaySoundFXClip(pausedEffect, transform, 1f);
                 Time.timeScale = 0;
+                paused.SetActive(true);
                 Paused = true;
             }
         }
@@ -79,6 +82,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject ending;
     [SerializeField] private GameObject text;
     [SerializeField] private GameObject dead;
+    [SerializeField] private GameObject paused;
+    [SerializeField] private AudioClip pausedEffect;
 
     public void ResetAll()
     {
@@ -86,6 +91,7 @@ public class GameManager : MonoBehaviour
         ending.SetActive(false);
         text.SetActive(false);
         dead.SetActive(false);
+        paused.SetActive(false);
 
         opening.SetActive(true);
         text.SetActive(true);

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vania.unity
     guid: 85aeda235acf6cf41a139aa508991f87
+  - enabled: 1
+    path: Assets/Scenes/Manor.unity
+    guid: f61037d3a81b062428d654742c87db3a
   m_configObjects: {}

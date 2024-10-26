@@ -51,7 +51,7 @@ public class Hunter : MonoBehaviour
             isDamage = false;
         }
 
-            if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             Die();
         }
@@ -146,7 +146,7 @@ public class Hunter : MonoBehaviour
             if (GameManager.Instance.health > 1)
             {
                 rb.velocity = new Vector2(0f, rb.velocity.y);
-                rb.AddForce(transform.up * 5f, ForceMode2D.Impulse);
+                rb.AddForce(transform.up * 7f, ForceMode2D.Impulse);
                 rb.AddForce(transform.right * -8f, ForceMode2D.Impulse);
                 GameManager.Instance.health -= 1f;
                 
@@ -159,7 +159,7 @@ public class Hunter : MonoBehaviour
                 SFXManager.Instance.PlaySoundFXClip(damage, transform, 1f);
                 Destroy(gameObject);
             }
-            damageTimer = 1f;
+            damageTimer = 0.5f;
         }
     }
 }
