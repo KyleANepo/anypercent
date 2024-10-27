@@ -75,7 +75,7 @@ public class Hunter : MonoBehaviour
         {
             Attack();
         }
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetMouseButtonDown(1) && GameManager.Instance.wrenches > 0)
         {
             AttackHigh();
         }
@@ -108,7 +108,7 @@ public class Hunter : MonoBehaviour
     void AttackHigh()
     {
         wrench = true;
-        
+        GameManager.Instance.wrenches -= 1;
     }
 
     void Throw()
