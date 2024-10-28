@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4932208516245318419, guid: dcde200b0436da64ab5e58874070abc4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7542757797752725550, guid: dcde200b0436da64ab5e58874070abc4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10179,14 +10179,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7844267740738692952, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
-      propertyPath: m_text
-      value: TREVOR MANSION
-      objectReference: {fileID: 0}
-    - target: {fileID: 7844267740738692952, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
-      propertyPath: m_fontSize
-      value: 46.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10275,7 +10267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4529309940555922249, guid: f183925c2975c434383fe438e066065c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.739904
+      value: 24.8
       objectReference: {fileID: 0}
     - target: {fileID: 4529309940555922249, guid: f183925c2975c434383fe438e066065c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -59572,6 +59564,22 @@ PrefabInstance:
       propertyPath: groups.Array.data[2]
       value: 
       objectReference: {fileID: 6994370757004172717, guid: 5034388962701e240b5101baaee3dbf2, type: 3}
+    - target: {fileID: 3732354136184961277, guid: 7cd3267629d7d1a4fb1add0a9cf806d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988890146900144248, guid: 7cd3267629d7d1a4fb1add0a9cf806d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -46.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 3988890146900144248, guid: 7cd3267629d7d1a4fb1add0a9cf806d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8981300048179438532, guid: 7cd3267629d7d1a4fb1add0a9cf806d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -59587,11 +59595,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 445794771117205000, guid: 5034388962701e240b5101baaee3dbf2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.38
+      value: 34.31
       objectReference: {fileID: 0}
     - target: {fileID: 445794771117205000, guid: 5034388962701e240b5101baaee3dbf2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.53
+      value: 1.68
       objectReference: {fileID: 0}
     - target: {fileID: 445794771117205000, guid: 5034388962701e240b5101baaee3dbf2, type: 3}
       propertyPath: m_LocalPosition.z

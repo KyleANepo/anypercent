@@ -863,9 +863,9 @@ MonoBehaviour:
   Paused: 0
   healthbar: {fileID: 3702206480393382538}
   health: 5
-  numWrenches: {fileID: 0}
+  numWrenches: {fileID: 7682998785653140952}
   wrenches: 0
-  ui: {fileID: 0}
+  ui: {fileID: 2050633783959862678}
   opening: {fileID: 4581047256136514951}
   ending: {fileID: 8366836633728297680}
   text: {fileID: 6853686285577333324}
