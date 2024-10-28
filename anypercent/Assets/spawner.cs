@@ -7,6 +7,7 @@ public class spawner : MonoBehaviour
     [SerializeField] private List<GameObject> groups;
     [SerializeField] private float min;
     [SerializeField] private float max;
+    [SerializeField] private Transform spawn;
     private float timer = 0f;
 
     // Start is called before the first frame update
@@ -30,7 +31,7 @@ public class spawner : MonoBehaviour
 
     private void SpawnGroup()
     {
-        Instantiate(GetRandGroup(), transform.position, transform.rotation);
+        Instantiate(GetRandGroup(), spawn.position, spawn.rotation);
     }
 
     public GameObject GetRandGroup()

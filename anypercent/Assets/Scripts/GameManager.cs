@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
+        ui.SetActive(true);
     }
 
     private void Update()

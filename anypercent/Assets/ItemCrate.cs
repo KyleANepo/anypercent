@@ -11,6 +11,7 @@ public class ItemCrate : MonoBehaviour, IEnemy
     [SerializeField] AudioClip crateSFX;
     [SerializeField] List<GameObject> items;
     private int index;
+    private bool isBroken;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,9 @@ public class ItemCrate : MonoBehaviour, IEnemy
 
     public void Die()
     {
+        if (isBroken) return;
+
+        isBroken = true;
         SFXManager.Instance.PlaySoundFXClip(crateSFX, transform, 1f);
         GameObject CE = Instantiate(crateVFX, transform.position, transform.rotation);
         CE.GetComponent<deatheffect>().entitySprite = sprite;

@@ -8,7 +8,7 @@ public class SpawnerActivator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (spawner)
+        if (spawner && collision.GetComponent<Collider2D>().GetComponent<Hunter>())
         {
             Debug.Log("Spawner active!");
             spawner.SetActive(true);

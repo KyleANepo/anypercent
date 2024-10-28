@@ -305,3 +305,4 @@ MonoBehaviour:
   - {fileID: 8236161077156283295, guid: 15e0899274b173644b2adacb227c5c59, type: 3}
   min: 3
   max: 6
+  spawn: {fileID: 3252011336427419872}

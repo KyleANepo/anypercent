@@ -5,7 +5,9 @@ using UnityEngine;
 public class Eye : MonoBehaviour, IEnemy
 {
     [SerializeField] public float speed;
-    [SerializeField] public float offset = 1;
+    [SerializeField] public float frequency;
+    [SerializeField] public float magnitude;
+    private float sinCenterY;
     
     //private Rigidbody2D rb;
 
@@ -14,6 +16,8 @@ public class Eye : MonoBehaviour, IEnemy
     {
         //rb = GetComponent<Rigidbody2D>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
+
+        sinCenterY = transform.position.y;
     }
 
     void FixedUpdate()
@@ -21,10 +25,10 @@ public class Eye : MonoBehaviour, IEnemy
         if (GameManager.Instance.Paused) return;
 
         Vector2 pos = transform.position;
+
+        float sin = Mathf.Sin(pos.x * frequency) * magnitude;
         pos.x -= speed * Time.fixedDeltaTime;
-        
-        float sin = Mathf.Sin(pos.x);
-        pos.y = sin - offset;
+        pos.y = sinCenterY + sin;
 
         transform.position = pos;
     }
