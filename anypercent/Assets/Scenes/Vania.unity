@@ -10801,7 +10801,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2050633783959862678, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2868106729070678361, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
       propertyPath: wrenches
@@ -11678,7 +11678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6599419320716776509, guid: 15e0899274b173644b2adacb227c5c59, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6599419320716776509, guid: 15e0899274b173644b2adacb227c5c59, type: 3}
       propertyPath: m_LocalRotation.w

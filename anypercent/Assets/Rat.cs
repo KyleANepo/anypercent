@@ -26,7 +26,7 @@ public class Rat : MonoBehaviour, IEnemy
 
         rb.velocity = new Vector2(-speed, rb.velocity.y);
 
-        if (player.transform.position.x - 10 > transform.position.x)
+        if (player && player.transform.position.x - 10 > transform.position.x)
         {
             Debug.Log("rat left screen");
             Destroy(gameObject);
