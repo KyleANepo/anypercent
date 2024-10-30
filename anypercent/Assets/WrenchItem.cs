@@ -9,7 +9,7 @@ public class WrenchItem : MonoBehaviour
     public void IncreaseHealth()
     {
         SFXManager.Instance.PlaySoundFXClip(powerupSFX, transform, 1f);
-        GameManager.Instance.wrenches += 5;
+        GameManager.Instance.wrenches += 3;
         Destroy(gameObject);
     }
 

@@ -136,8 +136,6 @@ public class Hunter : MonoBehaviour
     private float damageTimer = 0f;
     private bool isDamage;
 
-    
-
     public void Die()
     {
         if (damageTimer < 0f)

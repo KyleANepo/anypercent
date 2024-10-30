@@ -9,7 +9,7 @@ public class PlayerCamera : MonoBehaviour
     public Vector3 locationOffset;
     // public Vector3 rotationOffset;
 
-    void Update()
+    void LateUpdate()
     {
         if (target)
         {

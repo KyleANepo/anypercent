@@ -11,6 +11,7 @@ public class SFXManager : MonoBehaviour
     [SerializeField] private AudioSource soundFXObject;
     [SerializeField] AudioClip[] musicScores;
     private AudioSource musicPlayer;
+    private bool muted;
 
     private void Awake()
     {
@@ -28,6 +29,15 @@ public class SFXManager : MonoBehaviour
     private void Start()
     {
         musicPlayer = GetComponent<AudioSource>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            muted = !muted;
+            MuteMusic(muted);
+        }
     }
 
     public void PlaySoundFXClip(AudioClip audioClip, Transform spawnTransform, float volume)

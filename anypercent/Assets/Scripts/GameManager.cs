@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         ui.SetActive(true);
+        wrenches = 3;
     }
 
     private void Update()
