@@ -16,5 +16,6 @@ public class Level1 : MonoBehaviour
     void Update()
     {
         SFXManager.Instance.PlayMusic(0);
+        GameManager.Instance.SetText("Riverbend City");
     }
 }

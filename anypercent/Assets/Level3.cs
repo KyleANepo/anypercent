@@ -14,5 +14,6 @@ public class Level3 : MonoBehaviour
     void Update()
     {
         SFXManager.Instance.PlayMusic(2);
+        GameManager.Instance.SetText("Mask Labs");
     }
 }

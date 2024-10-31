@@ -869,6 +869,7 @@ MonoBehaviour:
   opening: {fileID: 4581047256136514951}
   ending: {fileID: 8366836633728297680}
   text: {fileID: 6853686285577333324}
+  location: {fileID: 7844267740738692952}
   dead: {fileID: 874069641935864974}
   paused: {fileID: 6959754449921691841}
   pausedEffect: {fileID: 8300000, guid: 80017454a410fd9498bbb36bd6be7b4b, type: 3}

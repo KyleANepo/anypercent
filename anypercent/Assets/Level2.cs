@@ -14,5 +14,6 @@ public class Level2 : MonoBehaviour
     void Update()
     {
         SFXManager.Instance.PlayMusic(1);
+        GameManager.Instance.SetText("Hector Mansion");
     }
 }

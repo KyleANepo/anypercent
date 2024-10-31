@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject opening;
     [SerializeField] private GameObject ending;
     [SerializeField] private GameObject text;
+    [SerializeField] private TextMeshProUGUI location;
     [SerializeField] private GameObject dead;
     [SerializeField] private GameObject paused;
     [SerializeField] private AudioClip pausedEffect;
@@ -86,6 +87,11 @@ public class GameManager : MonoBehaviour
 
         opening.SetActive(true);
         text.SetActive(true);
+    }
+
+    public void SetText(string text)
+    {
+        location.text = text;
     }
 
     public void OnDeath()
