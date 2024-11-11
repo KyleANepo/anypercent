@@ -12,15 +12,39 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 849b6225f5ff2424bafb16490cc3b94a
   - enabled: 1
+    path: Assets/Scenes/fakemainmenu.unity
+    guid: 3e6d30e5474f47f4e928d7ad57c3e6c6
+  - enabled: 1
+    path: Assets/Scenes/totutorial.unity
+    guid: fa0eef464ccc0c245a74483d5b03ad78
+  - enabled: 1
     path: Assets/Scenes/tutorial.unity
     guid: 19caa8e6782c92e44b0d680ee654d267
   - enabled: 1
     path: Assets/Scenes/Vania.unity
     guid: 85aeda235acf6cf41a139aa508991f87
   - enabled: 1
+    path: Assets/Scenes/vaniatomanor.unity
+    guid: 689be07edf0a14f4a8349682f3ab782a
+  - enabled: 1
     path: Assets/Scenes/Manor.unity
     guid: f61037d3a81b062428d654742c87db3a
   - enabled: 1
+    path: Assets/Scenes/manortolab.unity
+    guid: 995aef07ef471a145a2ee04676da8d85
+  - enabled: 1
     path: Assets/Scenes/lab.unity
     guid: 8720c1944fd2ce64f8450c5588eb954b
+  - enabled: 1
+    path: Assets/Scenes/finalboss.unity
+    guid: 953a8785fa2e5054f894756ad0a95c48
+  - enabled: 1
+    path: Assets/Scenes/loop1cutscene.unity
+    guid: 0982e331b1b47694ab44d0216c2d134a
+  - enabled: 1
+    path: Assets/Scenes/tutorial 1.unity
+    guid: 6066ecf3b44c60e46923fb7cb1af1eee
+  - enabled: 1
+    path: Assets/Scenes/Vania2.unity
+    guid: a6ba17a43f689cc44a96924d18175bd9
   m_configObjects: {}

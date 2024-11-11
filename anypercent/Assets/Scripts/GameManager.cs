@@ -49,12 +49,17 @@ public class GameManager : MonoBehaviour
                 Paused = false;
             } else
             {
-                SFXManager.Instance.PlaySoundFXClip(pausedEffect, transform, 1f);
-                Time.timeScale = 0;
-                paused.SetActive(true);
-                Paused = true;
+                IsPaused();
             }
         }
+    }
+
+    private void IsPaused()
+    {
+        SFXManager.Instance.PlaySoundFXClip(pausedEffect, transform, 1f);
+        Time.timeScale = 0;
+        paused.SetActive(true);
+        Paused = true;
     }
 
     private void FixedUpdate()
