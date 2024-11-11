@@ -21,8 +21,8 @@ public class Hunter : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    [SerializeField] float speed = 10.0f;
-    [SerializeField] float jump = 2.0f;
+    // [SerializeField] float speed = 10.0f;
+    // [SerializeField] float jump = 2.0f;
     [SerializeField] float health = 5.0f;
 
     [SerializeField] private Transform groundCheck;
@@ -43,7 +43,7 @@ public class Hunter : MonoBehaviour
 
         if (!isDamage)
         {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            rb.velocity = new Vector2(horizontal * DebugManager.Instance.speed, rb.velocity.y);
         }
 
         if (isDamage && damageTimer <= 0f)
@@ -59,7 +59,7 @@ public class Hunter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             SFXManager.Instance.PlaySoundFXClip(toss, transform, .5f);
-            rb.velocity = new Vector2(rb.velocity.x, jump);
+            rb.velocity = new Vector2(rb.velocity.x, DebugManager.Instance.jump);
         }
 
         if (pipe || wrench)

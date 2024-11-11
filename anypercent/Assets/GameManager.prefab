@@ -339,7 +339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1886835708657752465
 RectTransform:
   m_ObjectHideFlags: 0
@@ -824,6 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6715350575323787670}
   - component: {fileID: 2868106729070678361}
+  - component: {fileID: 5381459580004758701}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -873,6 +874,21 @@ MonoBehaviour:
   dead: {fileID: 874069641935864974}
   paused: {fileID: 6959754449921691841}
   pausedEffect: {fileID: 8300000, guid: 80017454a410fd9498bbb36bd6be7b4b, type: 3}
+--- !u!114 &5381459580004758701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6211657648815574585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36739e07c9af83419a10b6f5e6f86e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jump: 10
+  boneScale: 1
 --- !u!1 &6853686285577333324
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +955,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RIVERBEND TOWN
+  m_text: YOUR APARTMENT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ba22114832eb7974789ccb94c8f60655, type: 2}
   m_sharedMaterial: {fileID: 8951445268581879491, guid: ba22114832eb7974789ccb94c8f60655, type: 2}
@@ -966,7 +982,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.2
+  m_fontSize: 45.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

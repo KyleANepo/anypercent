@@ -7920,10 +7920,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2050633783959862678, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6211657648815574585, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -7967,14 +7963,6 @@ PrefabInstance:
     - target: {fileID: 6715350575323787670, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7844267740738692952, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
-      propertyPath: m_text
-      value: YOUR APARTMENT
-      objectReference: {fileID: 0}
-    - target: {fileID: 7844267740738692952, guid: 6b897fa37d76f47499dc81413d71232c, type: 3}
-      propertyPath: m_fontSize
-      value: 45.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
