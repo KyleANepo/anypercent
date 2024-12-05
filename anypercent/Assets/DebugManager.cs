@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DebugManager : MonoBehaviour
@@ -15,6 +17,8 @@ public class DebugManager : MonoBehaviour
 
     public List<bool> developerNotesFound;
     public List<string> developerNotes;
+
+    public TextMeshProUGUI dialogue;
 
     private void Awake()
     {
@@ -34,16 +38,10 @@ public class DebugManager : MonoBehaviour
         if (index > developerNotes.Count) return;
 
         developerNotesFound[index] = true;
+    }
 
-        switch (index)
-        {
-            case 0: // break barrier
-
-                break;
-            case 1: // increase speed
-                speed = 8f;
-                break;
-
-        }
+    public void ChangePage(int index)
+    {
+        dialogue.text = developerNotes[index];
     }
 }

@@ -81,6 +81,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject dead;
     [SerializeField] private GameObject paused;
     [SerializeField] private AudioClip pausedEffect;
+    [SerializeField] private GameObject debugMenu;
 
     public void ResetAll()
     {
